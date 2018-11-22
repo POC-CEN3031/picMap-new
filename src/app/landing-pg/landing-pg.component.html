@@ -1,0 +1,60 @@
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">PicMap</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a routerLink="/new-post">New Post</a></li>
+            <li><a routerLink="/view-post">View Post</a></li>
+            <li><a routerLink="/user-profile">User Profile</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a routerLink="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+	<div class = "row">
+		<div class = "columnM">
+			<h2>Posts Map</h2>
+<!-- 			<div id="googleMap" style="width:100%;height:400px;">
+			</div>
+
+			<script>
+				function myMap() 
+				{
+					var mapProp= {
+					center:new google.maps.LatLng(29.6516,-82.3248),
+					zoom:5,
+					};
+					
+					var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+				}
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP5MvQIHf62AO1ZDa3TLM460SdsCrI2-8&callback=myMap"></script> -->
+			<div id= "map" style="width:100%;height:400px;"></div>
+			<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoiYXRheWxvcjI5NiIsImEiOiJjam9kYXVmdHMwcW8yM2tsZW94Y3c1MWZrIn0.Rx7Xd1MROpcGlfuj2d8D5A';
+				
+				var map = new mapboxgl.Map({
+					container: 'map', // container id
+					style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
+					center: [-77.38, 39], // starting position
+					zoom: 3 // starting zoom
+				});
+			</script>
+		</div>
+		<div class = "columnR">
+			<h2>Recent Posts</h2>
+		</div>
+		<div class = "columnP">
+			<h2>Post Preview</h2>
+		</div>
+    </div>
