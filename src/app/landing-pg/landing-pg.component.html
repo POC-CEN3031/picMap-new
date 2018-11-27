@@ -24,8 +24,7 @@
 	<div class = "row">
 		<div class = "columnM">
 			<h2>Posts Map</h2>
-<!-- 			<div id="googleMap" style="width:100%;height:400px;">
-			</div>
+ 			<!-- <div id="googleMap" style="width:100%;height:400px;"></div>
 
 			<script>
 				function myMap() 
@@ -38,18 +37,20 @@
 					var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 				}
 			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP5MvQIHf62AO1ZDa3TLM460SdsCrI2-8&callback=myMap"></script> -->
-			<div id= "map" style="width:100%;height:400px;"></div>
-			<script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoiYXRheWxvcjI5NiIsImEiOiJjam9kYXVmdHMwcW8yM2tsZW94Y3c1MWZrIn0.Rx7Xd1MROpcGlfuj2d8D5A';
-				
-				var map = new mapboxgl.Map({
-					container: 'map', // container id
-					style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
-					center: [-77.38, 39], // starting position
-					zoom: 3 // starting zoom
-				});
-			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCP5MvQIHf62AO1ZDa3TLM460SdsCrI2-8&callback=myMap"></script>
+       -->    <div class = "container">
+                <div id= "map" style="width:100%;height:400px;"></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRheWxvcjI5NiIsImEiOiJjam9kYXVmdHMwcW8yM2tsZW94Y3c1MWZrIn0.Rx7Xd1MROpcGlfuj2d8D5A';
+                    
+                    var map = new mapboxgl.Map({
+                        container: 'map', // container id
+                        style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
+                        center: [-77.38, 39], // starting position
+                        zoom: 3 // starting zoom
+                    });
+                </script>
+            </div>
 		</div>
 		<div class = "columnR">
 			<h2>Recent Posts</h2>

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-register',
-  styleUrls: ['./register.component.scss'],
+  styleUrls: ['./register.component.css'],
   templateUrl: './register.component.html',
 })
 export class RegisterComponent {
