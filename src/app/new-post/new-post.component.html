@@ -1,19 +1,65 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+  crossorigin="anonymous">
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">PicMap</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Pic Map</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/new-post">New Post</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/view-post">View Post</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/user-profile">User Profile</a></li>
+    </ul>
+    <ul class="navbar-nav navbar-right">
+      <li class="nav-item"><a class="nav-link" routerLink="/register"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+      <div class="col">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Location</label>
+        <input type="email" class="form-control" id="location" aria-describedby="emailHelp" placeholder="Enter email">
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a routerLink="/new-post">New Post</a></li>
-        <li><a routerLink="/view-post">View Post</a></li>
-        <li><a routerLink="/user-profile">User Profile</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      <div class="form-group">
+          <label for="exampleFormControlTextarea1">Description</label>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="checkBox">
+        <label class="form-check-label" for="exampleCheck1">Check button here if you need it for some readon</label>
+      </div>
+      <div class="input-group mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile02">
+          <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+        </div>
+        <div class="input-group-append">
+          <span class="input-group-text" id="uploadButton">Upload</span>
+        </div>
+      </div>
+      <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
-  </nav>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
