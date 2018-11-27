@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-new-post',
-  styleUrls: ['./new-post.component.scss'],
+  styleUrls: ['./new-post.component.css'],
   templateUrl: './new-post.component.html',
 })
 export class NewPostComponent {

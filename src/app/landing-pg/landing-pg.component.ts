@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-landing-pg',
-  styleUrls: ['./landing-pg.component.scss'],
+  styleUrls: ['./landing-pg.component.css'],
   templateUrl: './landing-pg.component.html',
 })
 export class LandingPageComponent {
