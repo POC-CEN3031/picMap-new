@@ -25,35 +25,40 @@
     </ul>
   </div>
 </nav>
-
+<br>
 <div class="container">
-  <div class="row">
+  <div class="card">
+      <div class="card-body">
+    <div class="row">
       <div class="col">
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Location</label>
-        <input type="email" class="form-control" id="location" aria-describedby="emailHelp" placeholder="Enter email">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Location</label>
+            <input type="email" class="form-control" id="location" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="checkBox">
+            <label class="form-check-label" for="exampleCheck1">Check button here if you need it for some readon</label>
+          </div>
+          <div class="input-group mb-3">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile02">
+              <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                file</label>
+            </div>
+            <div class="input-group-append">
+              <span class="input-group-text" id="uploadButton">Upload</span>
+            </div>
+          </div>
+          <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-          <label for="exampleFormControlTextarea1">Description</label>
-          <textarea class="form-control" id="description" rows="3"></textarea>
-        </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="checkBox">
-        <label class="form-check-label" for="exampleCheck1">Check button here if you need it for some readon</label>
-      </div>
-      <div class="input-group mb-3">
-        <div class="custom-file">
-          <input type="file" class="custom-file-input" id="inputGroupFile02">
-          <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
-        </div>
-        <div class="input-group-append">
-          <span class="input-group-text" id="uploadButton">Upload</span>
-        </div>
-      </div>
-      <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
-    </form>
     </div>
+  </div>
   </div>
 </div>
 
