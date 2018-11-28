@@ -11,6 +11,10 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { MapComponent } from './map/map.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,11 +23,15 @@ import { RegisterComponent } from './register/register.component';
     UserProfileComponent,
     ViewPostComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'google key'
+    }),
     RouterModule.forRoot(
       [{ 
         path: '', 
@@ -53,6 +61,7 @@ import { RegisterComponent } from './register/register.component';
     )
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
