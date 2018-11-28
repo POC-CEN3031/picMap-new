@@ -30,7 +30,7 @@ import { MapComponent } from './map/map.component';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'google key'
+      apiKey: 'AIzaSyCP5MvQIHf62AO1ZDa3TLM460SdsCrI2-8'
     }),
     RouterModule.forRoot(
       [{ 
